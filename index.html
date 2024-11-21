@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kesehatan Ipa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">AffifHealth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#examinations">Daftar Pemeriksaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form">Pendaftaran</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Selamat Datang di Layanan Kesehatan AffifHealth</h1>
+            <p class="lead">Pusat pemeriksaan kesehatan terpercaya Anda.</p>
+            <a href="#form" class="btn btn-light btn-lg">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Daftar Pemeriksaan -->
+    <section id="examinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Daftar Pemeriksaan</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="img.jpg/umum.jpg" class="card-img-top" alt="Pemeriksaan Umum">
+                        <div class="card-body">
+                            <h5 class="card-title">Pemeriksaan Umum</h5>
+                            <p class="card-text">Pemeriksaan kesehatan menyeluruh untuk menjaga kondisi tubuh Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="img.jpg/gigi.jpg" class="card-img-top" alt="Pemeriksaan Gigi">
+                        <div class="card-body">
+                            <h5 class="card-title">Pemeriksaan Gigi</h5>
+                            <p class="card-text">Perawatan dan pencegahan masalah kesehatan gigi dan mulut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="img.jpg/mata (2).jpg" class="card-img-top" alt="Pemeriksaan Mata">
+                        <div class="card-body">
+                            <h5 class="card-title">Pemeriksaan Mata</h5>
+                            <p class="card-text">Evaluasi kesehatan mata dan pengukuran penglihatan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur -->
+    <section id="Features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Fitur Unggulan</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="img.jpg/medis.jpg" class="card-img-top" alt="Tim Profesional">
+                    <div class="card-body">
+                        <h5 class="card-title">Tim Profesional</h5>
+                        <p>Dokter berpengalaman siap membantu kebutuhan kesehatan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img.jpg/pelayanan.jpg" class="card-img-top" alt="Pelayanan 24/7">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelayanan 24/7</h5>
+                        <p>Pelayanan tersedia kapan saja.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img.jpg/online (1).jpg" class="card-img-top" alt="Konsultasi Online">
+                    <div class="card-body">
+                        <h5 class="card-title">Konsultasi Online</h5>
+                        <p>Dapatkan bantuan medis langsung dari rumah.</p>
+                    </div>
+                </div>
+
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="form" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Pendaftaran</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                            <div class="invalid-feedback" id="nameError">Nama harus diisi.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                            <div class="invalid-feedback" id="emailError">Email harus diisi dan valid.</div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Jenis Pemeriksaan</label>
+                                <select id="service" class="form-select" required>
+                                    <option value="" disabled selected>Pilih jenis pemeriksaan</option>
+                                    <option value="Umum">Pemeriksaan Umum</option>
+                                    <option value="Gigi">Pemeriksaan Gigi</option>
+                                    <option value="Mata">Pemeriksaan Mata</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Daftar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Get the form and input elements
+        const form = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+    
+        // Event listener for form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+    
+            // Clear previous error messages
+            nameInput.classList.remove('is-invalid');
+            emailInput.classList.remove('is-invalid');
+            messageInput.classList.remove('is-invalid');
+            
+            let valid = true;
+    
+            // Validate Name
+            if (nameInput.value.trim() === "") {
+                nameInput.classList.add('is-invalid');
+                valid = false;
+            }
+    
+            // Validate Email
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (emailInput.value.trim() === "" || !emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('is-invalid');
+                valid = false;
+            }
+    
+            // Validate Message
+            if (messageInput.value.trim() === "") {
+                messageInput.classList.add('is-invalid');
+                valid = false;
+            }
+    
+            // If the form is valid, you can proceed to submit the form or take other actions
+            if (valid) {
+                // For demonstration, you can show a success message
+                alert("Formulir berhasil dikirim!");
+                // In a real-world case, you would send the form data to the server here.
+                form.reset();  // Reset the form
+            }
+        });
+    </script>
+    <!-- kontak -->
+           <!-- Kontak -->
+<section id="footer" style="background-color: white; color: black; padding: 50px 0;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px; color: black;">Hubungi Kami</h2>
+        <div class="row">
+            <!-- Informasi Kontak -->
+            <div class="col-md-6" style="margin-bottom: 30px;">
+                <h4 style="margin-bottom: 20px;">Informasi Kontak</h4>
+                <p><i class="bi bi-geo-alt-fill" style="font-size: 1.5rem; color: black;"></i> Alamat: Jl. Sehat No.123, Kota Medis</p>
+                <p><i class="bi bi-envelope-fill" style="font-size: 1.5rem; color: black;"></i> Email: <a href="mailto:info@layanankesehatan.com" style="color: red; text-decoration: none;">info@affifhealth.com</a></p>
+                <p><i class="bi bi-telephone-fill" style="font-size: 1.5rem; color: black;"></i> Telepon: (021) 123-4567</p>
+                <p><i class="bi bi-clock-fill" style="font-size: 1.5rem; color: black;"></i> Jam Operasional: Senin - Jumat, 08.00 - 17.00</p>
+            </div>
+    <!-- Footer -->
+    <footer id="footer" class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Layanan Kesehatan. AffifHealth.</p>
+    </footer>
+
+
+</body>
+</html>
